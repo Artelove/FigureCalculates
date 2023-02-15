@@ -13,7 +13,8 @@
 # 2. MS SQL query
 
 В базе данных MS SQL Server есть продукты и категории. Одному продукту может соответствовать много категорий, в одной категории может быть много продуктов. Напишите SQL запрос для выбора всех пар «Имя продукта – Имя категории». Если у продукта нет категорий, то его имя все равно должно выводиться.
-
+https://gist.github.com/Artelove/9233e9950fd31192e174ff4ce6a78108
+```
 CREATE TABLE Product (
 	Id INT PRIMARY KEY,
 	"Name" TEXT
@@ -58,3 +59,4 @@ LEFT JOIN ProductCategory PC
 	ON P.Id = PC.ProductId
 LEFT JOIN Category C
 	ON PC.CategoryId = C.Id;
+```
