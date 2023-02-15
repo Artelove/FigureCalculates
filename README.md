@@ -60,3 +60,5 @@ LEFT JOIN ProductCategory PC
 LEFT JOIN Category C
 	ON PC.CategoryId = C.Id;
 ```
+Результат запроса:
+![image](https://user-images.githubusercontent.com/66765809/219169161-40b23a6b-1937-4391-b02c-a3fa5c6a7730.png)
